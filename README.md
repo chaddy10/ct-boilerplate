@@ -1,8 +1,8 @@
 =======
-Creare Boilerplate Theme
+CT Creative WP Boilerplate Theme
 =======
 
-This is the Creare Boilerplate Theme. A lightweight theme based on `_s` to be used as a starter theme for client's website.
+This is the CT Creative WP Boilerplate Theme. A lightweight theme based on Creare's Boilerplate, made on `_s`. It is to be used as a starter theme for client's website.
 
 Here's some of the features:
 
@@ -15,6 +15,7 @@ Here's some of the features:
 * Include Font Awesome by uncommenting 1 line of code (SASS only).
 * Main navigation, Footer navigation & Sitemap menu already registered. Create the menus and assign to the theme location to use.
 * Home template page created and included in Page Template folder within theme.
+* Contact template page created and included in Page Template folder within theme. Also includes a separate .scss with styles for contact page.
 * Sitemap template page created and included in Page Template folder within theme. Includes code to show sitemap custom menu which can be created in backend.
 * SVG uploads into media library enabled.
 * Post thumbnails support added and add_image_size example in functions.php.
@@ -28,8 +29,6 @@ Here's some of the features:
 Getting Started
 ---------------
 
-Grab the latest version of this theme from BitBucket/SourceTree and you're almost there. Upload it to your WordPress installation, update the information in the theme stylesheet (SASS or CSS - depends what you're using!) and rename the theme folder. 
+Upload it to your WordPress installation, update the information in the theme stylesheet (SASS or CSS - depends what you're using!) and rename the theme folder. 
 
 Now you're ready to customise the theme for your client's bespoke website!
-
-Once the website/theme is live, delete this readme.
