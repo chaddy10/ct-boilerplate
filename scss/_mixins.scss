@@ -1,0 +1,64 @@
+/* Mixins */
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin text-size-adjust($size) {
+	-webkit-text-size-adjust: $size;
+	-ms-text-size-adjust: $size;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius; 
+  -moz-border-radius: $radius; 
+  border-radius: $radius; 
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin gradient( $topcolour, $botcolour, $start: 0%, $stop: 100% ) {
+	background: $topcolour;
+	background: -moz-linear-gradient(top, $topcolour $start, $botcolour $stop);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($start,$topcolour), color-stop($stop,$botcolour));
+	background: -webkit-linear-gradient(top, $topcolour $start,$botcolour $stop);
+	background: -o-linear-gradient(top, $topcolour $start,$botcolour $stop);
+	background: -ms-linear-gradient(top, $topcolour $start,$botcolour $stop);
+	background: linear-gradient(to bottom, $topcolour $start,$botcolour $stop);
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#{$topcolour}', endColorstr='#{$botcolour}');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$topcolour}', endColorstr='#{$botcolour}')";
+}
+
+@mixin absolute-position( $top: false, $right: false, $bottom: false, $left: false ) {
+	@if $top {
+		top: $top;
+	}
+	@if $right {
+		right: $right;
+	}
+	@if $bottom {
+		bottom: $bottom;
+	}
+	@if $left {
+		left: $left;
+	}
+	position: absolute;
+}
+
+@mixin bp($breakpoint) {
+    @media only screen and (min-width: $breakpoint + px ) { 
+    	@content; 
+    }
+}

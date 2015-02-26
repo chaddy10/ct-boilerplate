@@ -1,0 +1,38 @@
+// Theme Based styles
+
+.wrapper {
+	width:100%;
+	padding: 0 10px;
+	float: left;
+	#masthead {
+		padding: 10px 0 0;
+	}
+}
+
+.container {float:left;width:100%;max-width:$websitewidth}
+
+.wrap {
+	width:100%;
+	@include bp($desktop) {
+	        max-width: $websitewidth;
+	        margin: 0 auto;
+	}
+}
+
+.site-main {
+	width:100%;
+	@include bp($desktop) {
+		width:65%;
+		float: left;
+	}
+}
+
+.sidebar {
+	width:100%;
+	margin: 20px 0 0;
+	@include bp($desktop) {
+		width:25%;
+		float: right;
+		margin: 0;
+	}
+}

@@ -1,0 +1,67 @@
+/*!
+Theme Name: CT Creative Boilerplate
+Theme URI: [COMPANY URL]
+Author: CT Creative
+Author URI: http://www.ct-creative.co.uk
+Tags: light, responsive-layout
+Description: A bespoke theme designed and developed for [COMPANY NAME], based on the CT Creative & Creare Boilerplate.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: creare-boilerplate
+Domain Path: /languages/
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CT Creative Boilerplate is based on Creare Boilerplate, which is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+
+Do not remove the below styles. Needed to pass the 'theme check'.*/
+.sticky, .gallery-caption, .bypostauthor {
+	text-align: left;
+}
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------
+1.0 - Global
+2.0 - Modules
+3.0 - Theme
+4.0 - Packages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Global
+--------------------------------------------------------------*/
+
+@import "variables";
+@import "mixins";
+@import "global";
+@import "typography";
+
+/*--------------------------------------------------------------
+2.0 Modules
+--------------------------------------------------------------*/
+
+@import "modules";
+
+/*--------------------------------------------------------------
+3.0 Theme
+--------------------------------------------------------------*/
+
+@import "header";
+@import "layout";
+@import "main";
+@import "footer";
+@import "contact";
+
+/*--------------------------------------------------------------
+4.0 Packages
+--------------------------------------------------------------*/
+
+@import "packages/fontawesome/fontawesome"; // Uncomment to use fontawesome

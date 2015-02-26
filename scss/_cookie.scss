@@ -1,0 +1,81 @@
+/****************************************************
+*********** Cookies Banner & Page Styles ************
+****************************************************/
+
+#cookie-law {  
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  text-align: center;
+  z-index:9999; 
+}
+
+#cookie-law > div {  
+  background:#fff; 
+  opacity:0.95; 
+float:right;
+margin-right:15px;
+margin-bottom:15px;
+  width:75% !important;
+  padding:20px;
+  max-width: 395px;
+  display: inline-block;
+  text-align: left !important;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  box-shadow: 0px 0px 20px #A1A1A1;
+  -webkit-box-shadow: 0px 0px 20px #A1A1A1;
+  -moz-box-shadow: 0px 0px 20px #A1A1A1;
+  -o-box-shadow: 0px 0px 20px #A1A1A1; 
+  position:relative;
+}
+
+#cookie-law span#cookie-title { padding: 0 !important; margin:0 0 8px !important; text-align:left !important; font-size:15px !important; color:#444; margin-bottom:9px;float:left;width:100%;font-weight:600;
+}
+#cookie-law p { padding: 0 !important; margin:0 !important; text-align:left !important; font-size:12px !important; line-height: 18px !important; color:#666;
+}
+#cookie-law a {
+text-decoration:none;
+}
+a.close-cookie-banner {
+  position: absolute;
+  top:0px;
+  right:0px;
+  margin:10px;
+  display:block;
+  width:20px;
+  height:20px;
+  background:url(/wp-content/plugins/creare-eu-cookie-law-banner/images/close.png) no-repeat;
+  background-size: 20px !important;
+}
+
+a.close-cookie-banner span {
+  display:none !important;
+}
+
+// Cookies Page
+
+//cookies
+.page-template-page-cookies h1 {margin:30px 0}
+.page-template-page-cookies h2 {margin-top:35px;color:$primarycolour;}
+.page-template-page-cookies a {text-decoration:none;}
+.page-template-page-cookies .cookies {margin-bottom:35px;}
+.list1 li { list-style: inside;
+  @extend p;
+}
+.list-1 { color: $primarycolour; }
+.width1 { width: 20%; }
+.width2 { width: 60%; }
+#cookies-table { border-left: 1px solid $secondarycolour; 
+  th { color: #fff; border-right: 1px solid $secondarycolour; border-bottom: 1px solid $secondarycolour; border-top: 1px solid $secondarycolour; letter-spacing: 2px; text-transform: uppercase; text-align: left; padding: 6px 6px 6px 12px;background:$secondarycolour;}
+  td { border-right: 1px solid $secondarycolour; border-bottom: 1px solid $secondarycolour; background: #fff; padding: 6px 6px 6px 12px; color: #454545; }
+  }
+.page-template-page-cookies table td, .page-template-page-cookies table th {
+    font-size:0.9em;
+    
+    @include bp($phone) {
+        font-size:1.1em;
+    }
+}
